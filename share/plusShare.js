@@ -52,9 +52,11 @@
     function openSystem(msg, callback) {
         if (plus.share.sendWithSystem) {
             plus.share.sendWithSystem(msg, function() {
-                callback && callback(true);
+                //TODO 系统分享暂不支持回调
+                //callback && callback(true);
             }, function() {
-                callback && callback(false);
+                //TODO 系统分享暂不支持回调
+                //callback && callback(false);
             });
         } else {
             callback && callback(false);
